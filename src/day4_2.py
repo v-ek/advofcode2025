@@ -50,6 +50,7 @@ while True:
     taken_coordinates -= removed_last_round
     for curr_coordinates in removed_last_round:
         del locations_w_neighborhoods[curr_coordinates]
+    # Nothing was removed, we have finished
     if not removed_last_round:
         break
 
